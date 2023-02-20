@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>Recipes</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__img">
+			<div class="container">			
+				<div class="header__top">				
+					<nav class="nav">
+						<div class="nav__logo-list">
+							<div class="nav__logo">
+								<h2 class="logo"><a href="#!">Recipes</a></h2>
+							</div>
+							<ul class="nav__list nav__list--header">
+								<li><a href="#!">Главная</a></li>
+								<li><a href="#!">Рецепты </a></li>
+								<li><a href="#!">Избранное</a></li>
+							</ul>
+						</div>
+						<div class="nav__login nav__login--header">
+							<img alt="login-inc" src="./img/header/login.svg" class="nav__login-inc">
+							<a href="#popup" class="nav__btn btn__open-form">Войти</a>
+						</div>
+						<button type="button" class="nav__toggle">
+							<div class="menu-icon-wrapper">
+								<div class="menu-icon"></div>
+							</div>
+						</button>
+					</nav>
+				</div>
+				<div class="header__row">
+					<h1 class="header__title">Готовь и делись рецептами</h1>
+					<p class="header__text">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
+					<div class="header__buttons">
+						<button class="btn-add">
+							<img alt="plus-pic" src="./img/header/add.svg" class="btn-add_inc">
+							Добавить рецепт
+						</button>
+						<a href="#popup" class="btn-login btn__open-form">Войти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="sorting">
+			<div class="container">
+				<div class="sorting__info">
+					<h2 class="sorting__title">Умная сортировка по тегам</h2>
+					<p class="sorting__text">
+						Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории.
+					</p>
+				</div>
+				<ul class="sorting__category">
+					<li class="category">
+						<img src="./img/sorting-tags/ic-menu.svg" class="category__inc" alt="category">
+						<h3 class="category__title">Простые блюда</h3>
+						<p class="category__text">Время приготвления таких блюд не более 1 часа</p>
+					</li>
+					<li class="category">
+						<img src="./img/sorting-tags/ic-cook.svg" class="category__inc" alt="category">
+						<h3 class="category__title">Детское</h3>
+						<p class="category__text">Самые полезные блюда которые можно детям любого возраста</p>
+					</li>
+					<li class="category">
+						<img src="./img/sorting-tags/ic-chef.svg" class="category__inc" alt="category">
+						<h3 class="category__title">От шеф-поваров</h3>
+						<p class="category__text">Требуют умения, времени и терпения, зато как в ресторане</p>
+					</li>
+					<li class="category">
+						<img src="./img/sorting-tags/ic-holiday.svg" class="category__inc" alt="category">
+						<h3 class="category__title">На праздник</h3>
+						<p class="category__text">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="dish-day">
+			<div class="container__dish-day">
+				<div class="dish-day__block-img">
+					<img src="./img/recipe-day/recipe-day_img.jpg" alt="Dish day picture" class="dish-day__img">
+					<a href="#!" class="dish-day__contact">@glazest</a>
+				</div>
+				<div class="dish-day__block-info">
+					<div class="dish-day__info">
+						<img src="./img/recipe-day/recipe-day_icon.png" alt="Dish day logo" class="dish-day__inc">
+						<div class="dish-day__statistics">
+							<div class="dish-day__like">
+								<img src="./img/recipe-day/like.svg" class="dish-day__like-inc" alt="like">
+								<span class="dish-day__like-span">0</span>
+							</div>
+							<div class="dish-day__timer">
+								<img src="./img/recipe-day/timer.svg" class="dish-day__timer-inc" alt="timer">
+								<p class="dish_day-time">35 минут</p>
+							</div>
+						</div>
+					</div>
+					<div class="dish-day__info-text">
+						<h2 class="dish-day__title">Тыквенный супчик на кокосовом молоке</h2>
+						<p class="dish-day__text">
+							Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="search">
+			<div class="container">
+				<div class="search__content">
+					<h2 class="search__title">Поиск рецептов</h2>
+					<p class="search__text">Введите примерное название блюда, а мы по тегам найдем его</p>
+					<form class="search-form">
+						<input type="text" name="name_dish" class="search__dish" placeholder="Название блюда....">
+						<button class="search__btn">Поиск</button>
+					</form>
+					<ul class="search__tegs">
+						<li class="dish__teg">
+							<a href="#!" class="dish__teg-name">Мясо</a>
+						</li>
+						<li class="dish__teg">
+							<a href="#!" class="dish__teg-name">Деликатесы</a>
+						</li>
+						<li class="dish__teg">
+							<a href="#!" class="dish__teg-name">Пироги</a>
+						</li>
+						<li class="dish__teg">
+							<a href="#!" class="dish__teg-name">Рыба</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__info">
+				<a href="index.html" class="footer__logo">Recipes</a>
+				<p class="footer__text">© Recipes 2021</p>
+			</div>
+		</div>
+	</footer>
+
+	<div id="popup" class="popup">
+		<div class="popup__container">
+			<div class="popup__content">
+				<h2 class="popup__title">Войдите в профиль</h2>
+				<p class="popup__text">
+					Добавлять рецепты могут только зарегистрированные<br>пользователи.
+				</p>
+				<div class="popup__btns">
+					<a href="#form-enter" class="btn__open-form popup__btn-orange-enter">Войти</a>
+					<a href="#form-registration" class="btn__open-form popup__btn-white-register">Регистрация</a>
+				</div>
+				<div class="popup__close btn__close-form">&#10006;</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-enter" class="popup">
+		<div class="popup__container">
+			<div class="popup__content">
+				<h2 class="popup__title">Войти</h2>
+				<form onsubmit="return checkFormLogin(this)" method="post">
+					<input type="text" placeholder="Логин" class="popup__input" id="aut_login">
+					<input type="password" placeholder="Пароль" class="popup__input" id="aut_pass">
+					<div class="popup__btns">
+						<div id="errorLogin" class="error__form-login"></div>
+						<button class="popup__btn-orange" onclick="return checkPassword();">Войти</button>
+						<button class="popup__btn-white btn__form-close">Отмена</button>
+					</div>
+					<div class="popup__not-account">
+						<a href="#form-registration" class="btn__open-form">У меня еще нет аккаунта</a>
+					</div>
+				</form>
+				<div class="popup__close btn__close-form">&#10006;</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-registration" class="popup">
+		<div class="popup__container">
+			<div class="popup__content">
+				<h2 class="popup__title">Регистрация</h2>
+				<form onsubmit="return checkFormRegistration(this)" method="post">
+					<input type="text" placeholder="Имя" class="popup__input" id="reg_name">
+					<input type="text" placeholder="Логин" class="popup__input" id="reg_login">
+					<div class="popup__reg-inputs">
+						<div class="reg__input-password">
+							<input type="password" placeholder="Пароль" class="popup__reg-input" id="reg_pass">
+							<p class="popup__reg-text">Минимум 8 символов</p>
+						</div>
+						<input type="password" placeholder="Повторите пароль" class="popup__reg-input" id="reg_repass">
+					</div>
+					<div class="popup__btns">
+						<div id="errorRegistr" class="err__form-reg"></div>
+						<button class="popup__btn-orange">Зарегистрироваться</button>
+						<button class="popup__btn-white btn__close-form">Отмена</button>
+					</div>
+					<div class="popup__not-account">
+						<a href="#form-enter" class="btn__open-form">У меня уже есть аккаунт</a>
+					</div>
+				</form>
+				<div class="popup__close btn__close-form">&#10006;</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/script.js"></script>
+</body>
+</html>
